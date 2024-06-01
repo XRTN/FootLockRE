@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('path/to/orbitron-font.woff2') format('woff2'),
+         url('path/to/orbitron-font.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Zen Dots';
+    src: url('path/to/zendots-font.woff2') format('woff2'),
+         url('path/to/zendots-font.woff') format('woff');
+}
+
+    
+
+
+*{
+    font-family: Orbitron ;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+html{
+    font-size: 60%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: max-content;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #151313;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+header .logo{
+font-family: Zen Dots ;
+font-size: 2rem;
+color: #FFFFFF;
+font-weight: 400;
+
+}
+header .navbar a{
+    font-size: 1.5 rem;
+    color: #FFFFFF;
+    margin: 0 1rem;
+}
+header .navbar a:hover{
+    color: gray;
+}
+#menu-bar{
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 2rem 9%;
+}
+.home{
+    padding: 0;
+    position: relative;
+}
+.home .slide-container .slide{
+    min-height: 100vh;
+   display: flex;
+   align-items: normal center;
+   flex-wrap: wrap;
+ 
+   padding-top: 6rem ;
+ 
+
+}
+.home .slide-container .slide .image{
+    flex: 1 1 50rem;
+    position: relative;
+    z-index: 0;
+}
+.home .slide-container .slide .image .shoe{
+    width: 100vw;
+    animation: shoe .5s ease-in ;
+}
+@keyframes shoe{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+}
+.home .slide-container{
+    display: none;
+    position: relative;
+}.home .slide-container.active{
+    display: block;
+}
+.home #prev,.home #next{
+    position:absolute;
+    top: 100rem;
+    transform: translateY(-50%);
+    z-index: 100;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5.5rem;
+    font-size: 2rem;
+    margin-top: -600px;
+    cursor: pointer;
+
+}.home #prev:hover,.home #next:hover{
+color:#FFFFFF;
+}
+.home #prev{
+    left: 2%;
+}
+.home #next{
+    right:2%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: auto;
+  }
+ .container #slogan{
+    position: static;
+    margin: 50px;
+    top: 800px;
+    align-items: center;
+    font-size: 30px;
+  }
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+   height: auto;
+   margin-left: 200px;
+   margin-top: 10px;
+  }
+.container2 h1{
+    position: absolute;
+    margin: 40px;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+.BlueSashi img{
+    display: flex;
+    width: 350px;
+    height: 250px;
+    margin-left: 200px;
+    margin-right: 0px;
+}
+.BlueSashiText h1{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    font-weight: 400;
+    margin-left: 225px;
+    font-size: 18px;
+    margin-top: -10px;
+}
+.jordanSpi img{
+    display: flex;
+    width: 350px;
+    height: 250px;
+    margin-left: 610px;
+    margin-top: -250px;
+}
+.JordanSpiText h1{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    font-weight: 400;
+    margin-left: 635px;
+    font-size: 18px;
+    margin-top: -45px;
+}
+.ambush img{
+    display: flex;
+    width: 355px;
+    height: 230px;
+    margin-left: 1020px;
+    margin-top: -214px;
+    
+}
+.ambushText h1{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    font-weight: 400;
+    margin-left: 1045px;
+    font-size: 18px;
+    margin-top: -70px;
+}
+.LatestShoes h1{
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 100px;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+.JordanAd img{
+    display: flex;
+    align-items: normal center;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    flex: 1 1 50rem;
+    position: relative;
+    z-index: 0;
+    width: 960px;
+    margin-left: 290px;
+}
+.JordanAdHeader h1{
+    position: static;
+    margin-left: 410px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    top: 800px;
+    align-items: center;
+    font-size: 2vw;
+}
+.JordanAdText p{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-weight: 400;
+    margin-left: 405px;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.BlackpinkAd img{
+    display: flex;
+    align-items: normal center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    flex: 1 1 50rem;
+    position: relative;
+    z-index: 0;
+    width: 960px;
+    margin-left: 290px;
+}
+.BlackpinkAdHeader h1{
+    position: static;
+    margin-left: 410px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    top: 800px;
+    align-items: center;
+    font-size: 2vw;
+    width: 45%;
+}
+.BlackpinkAdText p{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-weight: 400;
+    margin-left: 405px;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+footer {
+    position: absolute;
+    background: #d9d9d9;
+    height: auto;
+    width: 100vw;
+    font-family: "Orbitron";
+    padding-top: 40px;
+    color: #000000;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-content h1 {
+    font-size: 2.5rem;
+    font-family: "Zen Dots";
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin-left: 17rem;
+    margin-top: 4rem;
+  }
+  
+  .socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    margin-left: 130rem;
+    margin-top: -3.5rem;
+  }
+  
+  .socials li {
+    margin: 0 10px;
+  }
+  
+  .socials a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .socials a i {
+    font-size: 1.5rem;
+  }
+  
+  .footer-bottom {
+    background: #d9d9d9;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  
+  .footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+  }
+  
+@media (max-width:768px){
+    #menu-bar{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: -120%;
+        width: 100%;
+        background: #151313;
+        border-top: .1rem solid rgba(0, 0,0,1);
+    }
+    header .navbar a{
+        font-size: 1.5rem;
+        background: #797474;
+        border:.1rem solid #000;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: 1rem;
+        display: block;
+        text-align: center;
+    }
+    header .navbar.active{
+        left: 0;
+    }
+    .footer-content h1 {
+        font-size: 1.5rem;
+      }
+    .socials {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    
+    .home #next,.home #prev{
+           top: auto;
+    bottom: 20px;
+    transform: translateY(0); 
+    }
+}

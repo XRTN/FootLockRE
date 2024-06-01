@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="subscription/subscriptionStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;900&family=Zen+Dots&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cfd8d4b2b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fa fa-bars"></div>
+        <a href="/homeIndex.html"class="logo">FootlockRE</a>
+        <nav class="navbar">
+        <a href="/shoesIndex.html">SHOES</a>
+        <a href="/eventsIndex.html">EVENTS</a>
+        <a href="/subscriptionIndex.html">SUBSCRIPTION</a>
+        <a href="/aboutUsIndex.html">ABOUT US</a>
+    </nav>
+    </header> 
+    <section class="Subscription"id="Subscription">
+        <div class="Family">
+            <h1>Join Our Family</h1>
+        </div>
+        <form action="" method="">
+            <div class="Name">
+                <label for="Name">Name*</label>
+                <input type="text" name="Name" id="Name">
+            </div>
+            <div class="email">
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="phone">
+                <label for="phone">Phone Number*</label>
+                <input type="number" name="phone" id="phone">
+            </div>
+            <div class="nationality">
+                <label for="nationality">Country*</label>
+                <select name="nationality" id="nationality">
+            </select>
+            </div>
+            <div class="checkbox">
+                <label for="checkbox">I agree to the terms and conditions</label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+            </div>
+            <input type="button" class="register" onclick="validateForm()"value="Register">
+        </form>
+</section>
+<footer>
+    <div class="footer-content">
+        <h1>FootlockRE</h1>
+        <ul class="socials">
+            <li><a target="_blank" href="https://www.instagram.com/footlocker/"><i class="fa fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/footlocker"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/Footlocker"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://www.youtube.com/@FootLockerofficial"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>COPYRIGHT &copy;2023 FOOTLOCKRE. ALL RIGHTS RESERVED.</p>
+    </div>
+</footer>
+</body>
+</html>
+
+<script src="subscription/subscriptionScript.js"></script>

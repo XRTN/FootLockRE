@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('path/to/orbitron-font.woff2') format('woff2'),
+         url('path/to/orbitron-font.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Zen Dots';
+    src: url('path/to/zendots-font.woff2') format('woff2'),
+         url('path/to/zendots-font.woff') format('woff');
+}
+
+    
+
+
+*{
+    font-family: Orbitron ;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+html{
+    font-size: 60%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: max-content;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #151313;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+header .logo{
+font-family: Zen Dots ;
+font-size: 2rem;
+color: #FFFFFF;
+font-weight: 400;
+
+}
+header .navbar a{
+    font-size: 1.5 rem;
+    color: #FFFFFF;
+    margin: 0 1rem;
+}
+header .navbar a:hover{
+    color: gray;
+}
+#menu-bar{
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 2rem 9%;
+}
+.home{
+    padding: 0;
+    position: relative;
+}
+.Family h1{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+form{
+    display: flex;
+}
+input[type=text]{
+    font-size: 3rem;
+    font-weight: 300;
+    align-items: start;
+    background: #d9d9d9;
+    color: #9b9b9b;
+    border:.1rem solid #d9d9d9;
+    border-radius: .5rem;
+    border-right-width: 75rem;
+    padding: 1rem;
+    padding-left: 10rem;
+    margin-top: 2rem;
+    display: flex;
+    text-align: left;
+}
+label[for="Name"]{
+    font-size: 3rem;
+    font-weight: 300;
+    align-items: start;
+    color: #9b9b9b;
+    display: flex;
+    text-align: left;
+    margin-top: 20rem;
+}
+input[type=email]{
+    font-size: 3rem;
+    font-weight: 300;
+    align-items: start;
+    background: #d9d9d9;
+    color: #9b9b9b;
+    border:.1rem solid #d9d9d9;
+    border-radius: .5rem;
+    border-right-width: 75rem;
+    padding: 1rem;
+    padding-left: 10rem;
+    margin-top: 2rem;
+    margin-left: -130rem;
+    display: flex;
+    text-align: left;
+}
+label[for="email"]{
+    font-size: 3rem;
+    font-weight: 300;
+    align-items: start;
+    color: #9b9b9b;
+    display: flex;
+    text-align: left;
+    margin-top: 35rem;
+    margin-left: -130rem;
+}
+input[type=number]{
+    font-size: 3rem;
+    font-weight: 300;
+    align-items: start;
+    background: #d9d9d9;
+    color: #9b9b9b;
+    border:.1rem solid #d9d9d9;
+    border-radius: .5rem;
+    border-right-width: 75rem;
+    padding: 1rem;
+    padding-left: 10rem;
+    margin-top: 2rem;
+    margin-left: -130rem;
+    display: flex;
+    text-align: left;
+}
+label[for="phone"]{
+    font-size: 3rem;
+    font-weight: 300;
+    align-items: start;
+    color: #9b9b9b;
+    display: flex;
+    text-align: left;
+    margin-top: 50rem;
+    margin-left: -130rem;
+}
+label[for="nationality"]{
+    font-size: 3rem;
+    font-weight: 300;
+    align-items: start;
+    color: #9b9b9b;
+    display: flex;
+    text-align: left;
+    margin-top: 65rem;
+    margin-left: -130rem;
+}
+select{
+    font-size: 3rem;
+    font-weight: 300;
+    align-items: start;
+    background: #d9d9d9;
+    color: #9b9b9b;
+    border:.1rem solid #d9d9d9;
+    border-radius: .5rem;
+    border-right-width: 41rem;
+    padding: 1rem;
+    padding-left: 10rem;
+    margin-top: 2rem;
+    margin-left: -130rem;
+    display: flex;
+    text-align: left;
+}
+input[type=checkbox]{
+    margin-top:-2.25rem;
+    margin-left: -70rem;
+    display: flex;
+}
+label[for="checkbox"]{
+    font-size: 3rem;
+    font-weight: 300;
+    align-items: start;
+    color: #9b9b9b;
+    display: flex;
+    text-align: left;
+    margin-top: 80rem;
+    margin-left: -130rem;
+}
+.register{
+    display: flex;
+    background-color: #9b9b9b; 
+    color: white;
+    margin-top: 90rem;
+    margin-left: -100rem;
+    border:.1rem solid #9b9b9b;
+    border-radius: .5rem;
+    border-right-width: 30rem;
+    height: 10rem;
+    font-size: 2vw;
+    padding-left: 30rem;
+    cursor: pointer;
+    margin-bottom: 10rem;
+}
+footer {
+    position: absolute;
+    background: #d9d9d9;
+    height: auto;
+    width: 100vw;
+    font-family: "Orbitron";
+    padding-top: 40px;
+    color: #000000;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-content h1 {
+    font-size: 2.5rem;
+    font-family: "Zen Dots";
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin-left: 17rem;
+    margin-top: 4rem;
+  }
+  
+  .socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    margin-left: 130rem;
+    margin-top: -3.5rem;
+  }
+  
+  .socials li {
+    margin: 0 10px;
+  }
+  
+  .socials a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .socials a i {
+    font-size: 1.5rem;
+  }
+  
+  .footer-bottom {
+    background: #d9d9d9;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  
+  .footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+  }
+  
+@media (max-width:768px){
+    #menu-bar{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: -120%;
+        width: 100%;
+        background: #151313;
+        border-top: .1rem solid rgba(0, 0,0,1);
+    }
+    header .navbar a{
+        font-size: 1.5rem;
+        background: #797474;
+        border:.1rem solid #000;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: 1rem;
+        display: block;
+        text-align: center;
+    }
+    header .navbar.active{
+        left: 0;
+    }
+    .footer-content h1 {
+        font-size: 1.5rem;
+      }
+    .socials {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
